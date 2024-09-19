@@ -15,6 +15,9 @@ public class AddressManager {
         this.menuManager = new MenuManager();
     }
 
+    /**
+     * 프로그램을 실행하는 메서드
+     */
     public void run() {
 
         boolean endFlag = false;
@@ -40,6 +43,9 @@ public class AddressManager {
         }
     }
 
+    /**
+     * 주소록 관리를 담당하는 메서드
+     */
     private void addressProcess() {
         boolean endFlag = false;
         while (true) {
@@ -89,6 +95,9 @@ public class AddressManager {
         }
     }
 
+    /**
+     * 주소 검색을 담당하는 메서드
+     */
     public void addressSearch(){
         boolean flag = false;
         Scanner sc = new Scanner(System.in);
@@ -111,6 +120,9 @@ public class AddressManager {
 
     }
 
+    /**
+     * 모든 주소록을 출력하는 메서드
+     */
     public void allAddressSearch(){
         for (int i = 1; i < users.length; i++) {
             System.out.println("이름: " + users[i].getName());
